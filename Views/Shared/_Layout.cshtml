@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Туристична агенція"]</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+
+    <header class="custom-header">
+        <nav class="custom-navbar">
+            <ul>
+                <li><a class="active" href="/Home">Головна</a></li>
+                <li><a href="/Tours">Тури</a></li>
+                <li><a href="/Destinations">Напрямки</a></li>
+                <li><a href="/About">Про нас</a></li>
+                <li><a href="/Contact">Контакти</a></li>
+                <li><a href="/Account/Login">Аккаунт</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main" class="container">
+        @RenderBody()
+    </main>
+
+    <footer class="custom-footer">
+        <p>&copy; 2024 Туристична агенція. Всі права захищені.</p>
+    </footer>
+</body>
+</html>
