@@ -1,12 +1,47 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Discover World";
 }
-<div id="hero">
-    <img src="/img/background.jpg" alt="Background Image">
 
-    <div class="hero-content">
-        <h1>Твоя наступна пригода починається тут</h1>
-        <p>Подорожуй разом з нашою туристичною агенцією та відкрий нові горизонти</p>
-        <button class="button">Переглянути тури</button>
+<link href="/css/site.css" rel="stylesheet">
+
+
+<div class="hero-image">
+    <div class="overlay">
+        <div class="hero-text">
+            <h1>Discover World</h1>
+            <p>Private tours to exotic places</p>
+            <a href="#" class="btn btn-custom btn-lg">Look for more tours</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="container tour-cards">
+    <h2>Available Tours</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="/images/faroe-islands.jpg" class="card-img-top" alt="Faroe Islands">
+                <div class="card-body">
+                    <h5 class="card-title">Visit Faroe Islands <i class="fas fa-arrow-right"></i></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="/images/machu-picchu.jpg" class="card-img-top" alt="Machu Picchu">
+                <div class="card-body">
+                    <h5 class="card-title">Visit Machu Picchu <i class="fas fa-arrow-right"></i></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="/images/nepal.jpg" class="card-img-top" alt="Nepal">
+                <div class="card-body">
+                    <h5 class="card-title">Visit Nepal <i class="fas fa-arrow-right"></i></h5>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
